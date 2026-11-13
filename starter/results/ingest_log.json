@@ -1,0 +1,42 @@
+{
+  "errors": [
+    {
+      "source_id": "luat-dlcn-2025",
+      "error": "file not found: luat-dlcn-2025.pdf"
+    }
+  ],
+  "per_source": {
+    "luat-anm-2018": {
+      "status": "ok",
+      "empty_or_unreadable_pages": [],
+      "excluded_pages": {}
+    },
+    "luat-gddt-2023": {
+      "status": "ok",
+      "empty_or_unreadable_pages": [],
+      "excluded_pages": {}
+    },
+    "nd-13-2023": {
+      "status": "ok",
+      "empty_or_unreadable_pages": [],
+      "excluded_pages": {
+        "26": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "27": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "28": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "29": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "30": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "31": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "32": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "33": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "34": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "35": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm",
+        "36": "Phụ lục: biểu mẫu điền thông tin, không phải quy phạm"
+      }
+    },
+    "luat-dlcn-2025": {
+      "status": "missing_file",
+      "empty_or_unreadable_pages": null,
+      "excluded_pages": null
+    }
+  }
+}
