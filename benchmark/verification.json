@@ -1,0 +1,117 @@
+{
+  "n_questions": 20,
+  "per_split": {
+    "dev": 15,
+    "test": 5
+  },
+  "filter_questions_per_split": {
+    "dev": 3,
+    "test": 1
+  },
+  "ids_unique": true,
+  "all_evidence_verified": true,
+  "problems": [],
+  "rows": [
+    {
+      "id": "d01",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d02",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d03",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d04",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d05",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d06",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d07",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d08",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d09",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d10",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d11",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d12",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d13",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d14",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "d15",
+      "split": "dev",
+      "evidence_verified": true
+    },
+    {
+      "id": "t01",
+      "split": "test",
+      "evidence_verified": true
+    },
+    {
+      "id": "t02",
+      "split": "test",
+      "evidence_verified": true
+    },
+    {
+      "id": "t03",
+      "split": "test",
+      "evidence_verified": true
+    },
+    {
+      "id": "t04",
+      "split": "test",
+      "evidence_verified": true
+    },
+    {
+      "id": "t05",
+      "split": "test",
+      "evidence_verified": true
+    }
+  ],
+  "meets_minimums": true
+}
