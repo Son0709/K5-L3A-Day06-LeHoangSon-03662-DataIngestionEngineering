@@ -8,3 +8,6 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# local vector store (rebuild with: cd starter && python -m src.index)
+starter/results/chroma/

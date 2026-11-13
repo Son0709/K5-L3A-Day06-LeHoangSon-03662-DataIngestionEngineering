@@ -1,0 +1,38 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "dimensions": 384,
+  "metric": "cosine",
+  "vector_store": "chromadb 1.5.9 (PersistentClient, HNSW approximate)",
+  "store_path": "starter/results/chroma",
+  "doc_prefix": "passage: ",
+  "query_prefix": "query: ",
+  "versions": {
+    "torch": "2.15.0",
+    "transformers": "5.22.2",
+    "chromadb": "1.5.9",
+    "numpy": "2.5.4"
+  },
+  "python": "3.12.10",
+  "device": "cpu",
+  "cost_usd": 0,
+  "strategies": {
+    "A": {
+      "n_chunks": 414,
+      "embed_seconds": 10.4,
+      "store_seconds": 0.34,
+      "truncated_chunks_over_512_tokens": 0,
+      "count_after_first_ingest": 414,
+      "count_after_reingest": 414,
+      "reingest_no_duplicates": true
+    },
+    "B": {
+      "n_chunks": 240,
+      "embed_seconds": 14.56,
+      "store_seconds": 0.22,
+      "truncated_chunks_over_512_tokens": 0,
+      "count_after_first_ingest": 240,
+      "count_after_reingest": 240,
+      "reingest_no_duplicates": true
+    }
+  }
+}
