@@ -1,0 +1,33 @@
+{
+  "A": {
+    "n_chunks": 414,
+    "total_chars": 186988,
+    "min": 61,
+    "p10": 253,
+    "median": 500,
+    "mean": 451.7,
+    "p90": 500,
+    "max": 500,
+    "chunking_seconds": 0.005,
+    "approx_tokens_chars_div_4": 46747,
+    "dev_evidence_in_single_chunk": "13/15"
+  },
+  "B": {
+    "n_chunks": 240,
+    "total_chars": 177315,
+    "min": 135,
+    "p10": 277,
+    "median": 745,
+    "mean": 738.8,
+    "p90": 1149,
+    "max": 1371,
+    "chunking_seconds": 0.007,
+    "approx_tokens_chars_div_4": 44328,
+    "dev_evidence_in_single_chunk": "15/15"
+  },
+  "params": {
+    "A_size": 500,
+    "A_overlap": 50,
+    "B_max_chars": 1200
+  }
+}
