@@ -45,3 +45,46 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+# Bài nộp của học viên — Lê Hoàng Sơn (2A202603662)
+
+Corpus: Luật An ninh mạng 2018, Luật Giao dịch điện tử 2023, Nghị định 13/2023/NĐ-CP (87 trang nội dung). Embedding local `intfloat/multilingual-e5-small` + ChromaDB (không cần Docker, không cần API key, chi phí 0). Báo cáo: [report/individual/2A202603662_LeHoangSon.md](report/individual/2A202603662_LeHoangSon.md).
+
+## Cấu trúc và đường dẫn
+
+| Nội dung | Đường dẫn |
+|---|---|
+| PDF nguồn | `starter/data/raw/` |
+| Manifest (nguồn, quyền, trang, ký tự) | `data/manifest.json` |
+| Benchmark (20 câu, split, gold, kiểm chứng) | `benchmark/` |
+| Mã nguồn | `starter/src/` |
+| Chunk, trace top-3, chỉ số, log | `starter/results/` |
+| Nhãn chấm tay và tổng hợp | `starter/results/audit/` |
+| Nhật ký thí nghiệm A/B/C | `artifacts/experiment_log.csv` |
+
+## Cách chạy (Python 3.12, Windows/macOS/Linux)
+
+```bash
+cd starter
+python -m venv .venv            # Windows: .venv\Scripts\Activate.ps1 ; macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m src.corpus            # đọc PDF, chuẩn hóa, sinh data/manifest.json + results/ingest_log.json
+python -m src.benchmark         # kiểm chứng evidence của 20 câu -> benchmark/verification.json
+python -m src.build_chunks      # chunk A và B -> results/chunks_*.jsonl, chunk_stats.json
+python -m src.index             # embed + lưu vào Chroma (idempotent) -> results/ingest_report.json
+python -m src.run               # top-3 cho A/B/C trên 20 câu -> results/traces.jsonl, metrics.json
+python -m src.audit_summary     # tổng hợp nhãn chấm tay đã điền -> results/audit/summary.json
+```
+
+Lần đầu `src.index` tải model từ Hugging Face (cần mạng, vài trăm MB). Mọi bước đều báo lỗi nếu thiếu model/index, không fallback sang vector giả.
+
+**Cảnh báo:** không chạy lại `python -m src.audit`; lệnh này sinh lại phiếu chấm trống và sẽ ghi đè các file `*_labels.csv` đã chấm (nhãn nằm trong git, có thể khôi phục bằng `git checkout`).
+
+## Ghi chú môi trường và tái lập
+- Phiên bản đã dùng: Python 3.12.10, torch 2.15.0, transformers 5.22.2, chromadb 1.5.9, numpy 2.5.4 (xem `starter/results/ingest_report.json`).
+- Máy phát triển chặn một số DLL (scikit-learn, grpc); vì vậy dùng `transformers` thay `sentence-transformers` và chặn module telemetry gRPC của Chroma (`starter/src/store.py`). Máy không bị chặn không bị ảnh hưởng.
+- Thư mục `starter/results/chroma/` không được commit; dựng lại bằng `python -m src.index`.
+- Luật Bảo vệ dữ liệu cá nhân 2025 không nằm trong corpus (chỉ có bản scan, chưa OCR).
+- Kết quả chạy lại có thể lệch rất nhỏ ở điểm tương đồng do HNSW xấp xỉ và phiên bản thư viện.
