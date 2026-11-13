@@ -1,0 +1,21 @@
+position,chunk_label,score_0_1_2,reason
+P01,X,2,"Đã cắt đủ ý, nêu rõ Điều 6"
+P01,Y,2,Mặc dù có những ý bị cắt giữa chừng nhưng vẫn diễn đạt được nội dung điều 6
+P02,X,2,"Quá dài, những vẫn diễn đạt được nội dung"
+P02,Y,1,"Bị cắt quá nhiều, chỉ có nội dung đoạn nguồn, không hiểu ngữ cảnh"
+P03,X,2,"Cắt từ ý lớn, đoạn nguồn vẫn được diễn đạt đầy đủ"
+P03,Y,1,Vẫn hiểu được đại ý nhưng thiếu ngữ cảnh
+P04,X,1,"Bị cắt quá nhiều, chỉ có nội dung đoạn nguồn, không hiểu ngữ cảnh"
+P04,Y,2,Vẫn có thể diễn đạt được đầy đủ thông tin
+P05,X,2,Đầy đủ thông tin cần thiết
+P05,Y,1,"Bị cắt quá nhiều, không hiểu ngữ cảnh"
+P06,X,1,"Bị cắt giữa chừng, không hiểu ngữ cảnh"
+P06,Y,2,Vẫn hiểu được nội dung và ý trọn vẹn
+P07,X,2,Vẫn hiểu được nội dung và ý trọn vẹn
+P07,Y,1,"Bị cắt giữa chừng, không hiểu ngữ cảnh"
+P08,X,2,Vẫn hiểu được nội dung và ý trọn vẹn
+P08,Y,1,"Bị cắt giữa chừng, không hiểu ngữ cảnh"
+P09,X,2,Vẫn hiểu được nội dung và ý trọn vẹn
+P09,Y,1,"Bị cắt giữa chừng, không hiểu ngữ cảnh"
+P10,X,2,Vẫn hiểu được nội dung và ý trọn vẹn
+P10,Y,1,Vẫn hiểu được đại ý nhưng thiếu ngữ cảnh

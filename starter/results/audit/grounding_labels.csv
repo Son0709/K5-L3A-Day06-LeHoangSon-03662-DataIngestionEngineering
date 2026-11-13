@@ -1,0 +1,11 @@
+question,set_label,score_0_1_2,reason
+t01,X,2,"#2 đã chứa trọn nội dung quyền trẻ em khi tham gia không gian mạng, có thể truy được nguồn"
+t01,Y,2,"#1 dã chứa trọn nội dung quyền trẻ em khi tham gia không gian mạng, có thể truy được nguồn; #3 có thể gây nhiễu nhưng không làm ảnh hưởng đến câu trả lời"
+t02,X,2,"#1 đã chứa đầy đủ nội dung cần thiết để trả lời câu hỏi, có thể truy được nguồn"
+t02,Y,1,"Cả 3 # đều có chứa bằng chứng nhưng thiếu điều kiện hoặc ngữ cảnh cần thiết."
+t03,X,2,"#1 đã chứa đầy đủ nội dung cần thiết để trả lời câu hỏi, có thể truy được nguồn"
+t03,Y,1,"Cả 3 # đều có chứa bằng chứng nhưng thiếu điều kiện hoặc ngữ cảnh cần thiết."
+t04,X,1,"Cả 3 # đều có chứa bằng chứng nhưng thiếu điều kiện hoặc ngữ cảnh cần thiết."
+t04,Y,2,"#1 đã chứa đầy đủ nội dung cần thiết để trả lời câu hỏi, có thể truy được nguồn"
+t05,X,2,"#1 đã chứa đầy đủ nội dung cần thiết để trả lời câu hỏi, có thể truy được nguồn; tuy nhiên #2 và #3 có thể gây nhiễu, làm ảnh hưởng đến câu trả lời"
+t05,Y,1,"Cả 3 # đều có chứa bằng chứng nhưng thiếu điều kiện hoặc ngữ cảnh cần thiết."
